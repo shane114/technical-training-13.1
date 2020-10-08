@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-        <!-- FORM VIEW -->
+
+
         <record model="ir.ui.view" id="course_form_view">
             <field name="name">course.form</field>
             <field name="model">openacademy.course</field>
@@ -16,7 +17,7 @@
                                 <field name="description"/>
                             </page>
                             <page string="About">
-                                <field name = "about"/>
+                                <field name="about"/>
                             </page>
                         </notebook>
                     </sheet>
@@ -24,7 +25,7 @@
             </field>
         </record>
 
-        <!-- Insert Search -->
+
         <record model="ir.ui.view" id="course_search_view">
             <field name="name">course.search</field>
             <field name="model">openacademy.course</field>
@@ -32,10 +33,10 @@
                 <search>
                     <field name="name"/>
                     <field name="description"/>
+                    <field name="about"/>
                 </search>
             </field>
         </record>
-        
         <!-- window action -->
         <!--
             The following tag is an action definition for a "window action",

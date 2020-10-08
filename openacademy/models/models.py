@@ -9,7 +9,7 @@ class openacademy(models.Model):
 
      name = fields.Char(string="Title", required=True)
      description = fields.Text(string="Full Description")
-     about = fields.Text()
+     about = fields.Text("About this class")
 #     value2 = fields.Float(compute="_value_pc", store=True)
 #     description = fields.Text()
 #
